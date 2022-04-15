@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Globe/static/css/main.2e2b1efc.css",
+    "main.js": "/Globe/static/js/main.b06e2630.js",
+    "static/js/787.5e0ebcee.chunk.js": "/Globe/static/js/787.5e0ebcee.chunk.js",
+    "static/media/netguin_logo.png": "/Globe/static/media/netguin_logo.09cc11781773f40df452.png",
+    "index.html": "/Globe/index.html",
+    "main.2e2b1efc.css.map": "/Globe/static/css/main.2e2b1efc.css.map",
+    "main.b06e2630.js.map": "/Globe/static/js/main.b06e2630.js.map",
+    "787.5e0ebcee.chunk.js.map": "/Globe/static/js/787.5e0ebcee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e2b1efc.css",
+    "static/js/main.b06e2630.js"
+  ]
+}
