@@ -1,5 +1,6 @@
 import { geoOrthographic, geoPath, geoGraticule } from 'd3';
 import React, {useState, useCallback} from 'react';
+import $ from 'jquery';
 
 const width = 960;
 const height = 500;
@@ -29,10 +30,12 @@ const handleMouseUp = useCallback((event) => {
 },[])
 
 const handleMouseMove = useCallback((event) => {
-
+  
   const {clientX, clientY}= event;
   if(mouseDown){
     SetMousePosition({x:clientX, y:clientY});
+    $('.star').css('backgroundPositionX', clientX);
+    $('.star').css('backgroundPositionY', clientY);
   }
   
 },[SetMousePosition, mouseDown])
@@ -40,7 +43,7 @@ const handleMouseMove = useCallback((event) => {
   
   return(
   <g  className="marks" onMouseDown = {handleMouseDown} onMouseMove = {handleMouseMove} onMouseUp= {handleMouseUp}>
-      {projection.rotate([MousePosition.x + 30 / 60, MousePosition.y + 30 / 60, 0])}
+      {projection.rotate([MousePosition.x + 30 / 60, -(MousePosition.y + 30 / 60), 0])}
      <path className = "sphere" d={ path({type: 'Sphere'})}/>
       <path className = "graticule" d={ path(graticule())}/> 
      

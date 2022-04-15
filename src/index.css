@@ -5,6 +5,8 @@ body {
     sans-serif;
   
 }
+
+
 #main{
   height: calc(100vh - 20vh);
 }
@@ -13,6 +15,7 @@ body {
   height:  100vh; 
   width: 100% !important;
 }
+
 .star{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,6 +28,7 @@ body {
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
+
 .text {
   color: #169ca3;
   font-family: 'Brush Script MT', cursive;
@@ -36,10 +40,7 @@ body {
   margin-right: auto;
  
 }
-/* .marks circle {
-  fill: #137B80;
 
-} */
 .marks .sphere {
 	 fill: #2244c2;
    position: fixed!important;
@@ -58,52 +59,7 @@ body {
    fill: none;
 	stroke: #169ca3;
 }
-/* .globe .marks{
-  position: absolute; 
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-} */
 
-/* footer {
-  width: 100vw;
-  height : 60px;
-  background-color:grey;
-
-  margin-bottom: 0%;
-}
-
-footer p {
-  font-size: 1.6rem;
-  color: black;
-  text-align: center;
-  line-height : 60px;
-  font-weight: "800";
-} */
-
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  float: right;
-  margin-top: -5%;
-}
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
 
 /* The sidebar menu */
 .sidenav {

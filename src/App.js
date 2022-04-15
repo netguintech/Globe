@@ -19,8 +19,9 @@ function App() {
   return (
     <>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" rel="stylesheet" />
+      
       <Container fluid className='star bg-black' >
-
+      
         <Row>
         <Col xs= {1}><SideBar/></Col>
           <Col xs lg="12" className="text-center">
@@ -73,13 +74,13 @@ function App() {
             <Row>
               
               <Col lg="12" className="m-auto text-center">
-                <Navbar.Brand> <img
+                <Navbar.Brand> <a href ="https://github.com/netguintech"><img
                   alt=""
                   src={netguinlogo}
                   width="30"
                   height="30"
                   className="d-inline-block align-top"
-                />{' '}from NetGuin</Navbar.Brand>
+                /></a>{' '}from NetGuin</Navbar.Brand>
                
               </Col>
 

@@ -6,12 +6,11 @@ export const SideBar = () =>  {
    
 
     return(
-        <>
-            
+        <> 
             <div class="sidenav">
                 
-                <a href="#about"><FaGithub/></a>
-                <a href="#services"><FaMedium/></a>
+                <a href="https://github.com/netguintech/Globe"><FaGithub/></a>
+                <a href="#medium"><FaMedium/></a>
             </div>
         </>
         
