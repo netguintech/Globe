@@ -1,0 +1,151 @@
+body {
+  margin: 0 ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+}
+#main{
+  height: calc(100vh - 20vh);
+}
+.bg-black{
+  background-color:black;
+  height:  100vh; 
+  width: 100% !important;
+}
+.star{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+.text {
+  color: #169ca3;
+  font-family: 'Brush Script MT', cursive;
+ 
+}
+
+.globe{
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+/* .marks circle {
+  fill: #137B80;
+
+} */
+.marks .sphere {
+	 fill: #2244c2;
+   position: fixed!important;
+    left: 0px!important;
+    margin-left: 0px!important;
+}
+.marks .graticule {
+  fill: none;
+	 stroke: #C0C0BB;
+}
+.marks .feature {
+  fill: #137B80;
+	stroke: #C0C0BB;
+}
+.marks .interiors {
+   fill: none;
+	stroke: #169ca3;
+}
+/* .globe .marks{
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+} */
+
+/* footer {
+  width: 100vw;
+  height : 60px;
+  background-color:grey;
+
+  margin-bottom: 0%;
+}
+
+footer p {
+  font-size: 1.6rem;
+  color: black;
+  text-align: center;
+  line-height : 60px;
+  font-weight: "800";
+} */
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float: right;
+  margin-top: -5%;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 5%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    width: 10%;
+  }
+  .sidenav a {font-size: 18px;}
+}
