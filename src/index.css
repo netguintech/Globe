@@ -16,6 +16,10 @@ body {
   width: 100% !important;
 }
 
+svg {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
 .star{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -82,12 +86,21 @@ body {
   color: #818181;
   display: block;
 }
+.sidenav i {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
+.sidenav i:hover {
+  color: #f1f1f1;
+}
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -96,6 +109,7 @@ body {
     padding-top: 15px;
   }
   .sidenav a {font-size: 18px;}
+  .sidenav i {font-size: 18px;}
 }
 
 @media screen and (max-width: 450px) {
@@ -104,4 +118,5 @@ body {
     width: 10%;
   }
   .sidenav a {font-size: 18px;}
+  .sidenav i {font-size: 18px;}
 }

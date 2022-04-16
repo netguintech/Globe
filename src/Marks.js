@@ -25,6 +25,7 @@ export const Marks = ({data: {land, interiors}}) => {
 const handleMouseUp = useCallback((event) => {
   // const {clientX, clientY}= event;
   // SetMousePosition({x:clientX, y:clientY});
+  $('.marks').css('cursor', '')
   SetMousedDown(false);
   
 },[])
@@ -34,6 +35,7 @@ const handleMouseMove = useCallback((event) => {
   const {clientX, clientY}= event;
   if(mouseDown){
     SetMousePosition({x:clientX, y:clientY});
+    $('.marks').css('cursor', 'pointer')
     $('.star').css('backgroundPositionX', clientX);
     $('.star').css('backgroundPositionY', clientY);
   }
@@ -43,9 +45,9 @@ const handleMouseMove = useCallback((event) => {
   
   return(
   <g  className="marks" onMouseDown = {handleMouseDown} onMouseMove = {handleMouseMove} onMouseUp= {handleMouseUp}>
-      {projection.rotate([MousePosition.x + 30 / 60, -(MousePosition.y + 30 / 60), 0])}
+      {projection.rotate([MousePosition.x + 30 / 60, MousePosition.y, 0])}
      <path className = "sphere" d={ path({type: 'Sphere'})}/>
-      <path className = "graticule" d={ path(graticule())}/> 
+      <path className = "graticule" d={ path(graticule())} style = {{display: 'none'}}/> 
      
     {
       land.features.map(feature => (
