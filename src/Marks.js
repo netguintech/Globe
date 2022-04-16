@@ -45,7 +45,7 @@ const handleMouseMove = useCallback((event) => {
   
   return(
   <g  className="marks" onMouseDown = {handleMouseDown} onMouseMove = {handleMouseMove} onMouseUp= {handleMouseUp}>
-      {projection.rotate([MousePosition.x + 30 / 60, MousePosition.y, 0])}
+      {projection.rotate([MousePosition.x + 30 / 60, -MousePosition.y, 0])}
      <path className = "sphere" d={ path({type: 'Sphere'})}/>
       <path className = "graticule" d={ path(graticule())} style = {{display: 'none'}}/> 
      
