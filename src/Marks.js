@@ -17,14 +17,12 @@ export const Marks = ({data: {land, interiors}}) => {
   const [mouseDown, SetMousedDown] = useState(false)
 
   const handleMouseDown = useCallback((event) => {
-  // const {clientX, clientY}= event;
-  // SetMousePosition({x:clientX, y:clientY});
+
   SetMousedDown(true);
   
 },[])
 const handleMouseUp = useCallback((event) => {
-  // const {clientX, clientY}= event;
-  // SetMousePosition({x:clientX, y:clientY});
+
   $('.marks').css('cursor', '')
   SetMousedDown(false);
   
